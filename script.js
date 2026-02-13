@@ -4,6 +4,6 @@ btn.addEventListener('click', () => {});
 
 const infoBlock = document.getElementById('info');
 
-const tgObj = window?.Telegram?.WebAppInitData;
+const tgObj = window?.Telegram?.WebApp;
 
-infoBlock.textContent = `initData: ${tgObj?.user}`;
+infoBlock.textContent = `initData: ${tgObj?.initDataUnsafe?.user}`;
