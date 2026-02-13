@@ -1,0 +1,9 @@
+const btn = document.getElementById('buy');
+
+btn.addEventListener('click', () => {});
+
+const infoBlock = document.getElementById('info');
+
+const tgObj = window.Telegram.WebApp;
+
+infoBlock.textContent = `initData: ${tgObj.initData}; user: ${window.Telegram.WebAppUser.user}`;
